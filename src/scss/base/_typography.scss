@@ -1,0 +1,17 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+@import url("http://fonts.cdnfonts.com/css/frutiger");
+
+* {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 4.375rem;
+  letter-spacing: 5px;
+
+  @media screen and (min-width: $desktop-size) {
+    font-size: 3.125rem;
+    letter-spacing: 0.01rem;
+  }
+}
