@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
 main {
   padding: 0 20vw;
 }
@@ -11,7 +12,7 @@ main {
   src: url(/Frutiger_bold.c04b9f95.woff);
 }
 * {
-  font-family: "Frutiger", "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -24,6 +25,12 @@ h1 {
     font-size: 3.125rem;
     letter-spacing: 0.01rem;
   }
+}
+
+h3 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .banner {
@@ -70,20 +77,56 @@ h1 {
 }
 
 nav {
-  padding: 1vh 20vw;
+  padding: 0 20vw;
 }
-nav ul {
+nav .menu {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 0;
 }
-nav ul li {
-  display: inline-block;
-  padding-right: 7%;
+nav .menu li h3 {
+  display: flex;
 }
-nav ul li a {
+nav .menu li h3 a {
+  padding: 1vw 2vh;
+  display: block;
   text-decoration: none;
   color: #2c2a3b;
-  font-size: 16px;
-  font-weight: 700;
+  border-bottom: 4px solid;
+  border-color: transparent;
+}
+nav .menu li h3 a:focus {
+  border-bottom: 4px solid;
+  border-color: #b20a2f;
+}
+nav .menu li h3 a:focus ~ .dropdown {
+  display: block;
+}
+nav .dropdown {
+  visibility: hidden;
+  padding: 0;
+  list-style: none;
+  max-height: none;
+  max-width: none;
+  position: absolute;
+  min-height: 10rem;
+  z-index: 0;
+  -webkit-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+  padding-top: 40px;
+  display: grid;
+}
+nav .dropdown:before {
+  content: "";
+  position: absolute;
+  left: -100vw;
+  right: -100vw;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #fff;
 }
 
 .zoekcomponent input {

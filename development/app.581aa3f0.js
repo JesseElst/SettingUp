@@ -198,7 +198,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var Header = function Header() {
-  var template = "\n    <header> \n   <nav>\n   <ul>\n   <li><a href=\"#\">  <img src=\"keyboard_arrow_down.svg\" alt=\"pijl\"/></a></li>\n   <li><a href=\"#\">Menu</a></li>\n  <li><a href=\"#\">Collecties</a></li>\n  <li><a href=\"#\">Objecten</a></li>\n  <li><a href=\"#\">Tekeningen</a></li>\n  <li><a href=\"#\">Storingen</a></li>\n  \n   </ul>\n   </nav>\n    </header>";
+  var template = "\n    <header> \n   <nav>\n   <ul class=\"menu\">\n   <li><a href=\"#\">  <img src=\"keyboard_arrow_down.svg\" alt=\"pijl\"/></a></li>\n   <li><h3><a href=\"#\">Menu</a></h3></li>\n  <li><h3><a href=\"#\">Collecties</a></h3></li>\n  <li><h3><a href=\"#\">Objecten</a></h3></li>\n  <li><h3><a href=\"#\">Tekeningen</a></h3></li>\n  <li><h3><a href=\"#\">Storingen</a></h3>\n  <ul class=\"dropdown\">\n  <li>Collecties</li>\n  <li> Filter 1</li>\n  <li> Filter 2</li>\n  <li> Filter 3</li>\n  </ul></li>\n  \n   </ul>\n   </nav>\n    </header>";
   return template;
 };
 
