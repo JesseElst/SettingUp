@@ -198,7 +198,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var Header = function Header() {
-  var template = "\n    <header> \n   <nav>\n   <ul class=\"menu\">\n   <li><a href=\"#\">  <img src=\"keyboard_arrow_down.svg\" alt=\"pijl\"/></a></li>\n   <li><h3><a href=\"#\">Menu</a></h3></li>\n  <li><h3><a href=\"#\">Collecties</a></h3></li>\n  <li><h3><a href=\"#\">Objecten</a></h3></li>\n  <li><h3><a href=\"#\">Tekeningen</a></h3></li>\n  <li><h3><a href=\"#\">Storingen</a></h3>\n  <ul class=\"dropdown\">\n  <li>Collecties</li>\n  <li> Filter 1</li>\n  <li> Filter 2</li>\n  <li> Filter 3</li>\n  </ul></li>\n  \n   </ul>\n   </nav>\n    </header>";
+  var template = "\n    <header> \n   <nav>\n    <a href=\"#\">  <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/ProRail_logo.svg/1280px-ProRail_logo.svg.png\" alt=\"pijl\"/></a>\n   <ul class=\"menu\"><li><h3><a href=\"#\">Menu</a></h3></li>\n  <li><h3><a href=\"#\">Collecties</a></h3></li>\n  <li><h3><a href=\"#\">Objecten</a></h3></li>\n  <li><h3><a href=\"#\">Tekeningen</a></h3></li>\n  <li><h3><a href=\"#\">Storingen</a></h3>  \n  <ul class=\"dropdown\">\n  <li>Collecties</li>\n  <li> Filter 1</li>\n  <li> Filter 2</li>\n  <li> Filter 3</li>\n  </ul></li>\n  \n   </ul>\n   </nav>\n    </header>";
   return template;
 };
 

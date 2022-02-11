@@ -2,13 +2,12 @@ const Header = () => {
   const template = `
     <header> 
    <nav>
-   <ul class="menu">
-   <li><a href="#">  <img src="keyboard_arrow_down.svg" alt="pijl"/></a></li>
-   <li><h3><a href="#">Menu</a></h3></li>
+    <a href="#">  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/ProRail_logo.svg/1280px-ProRail_logo.svg.png" alt="pijl"/></a>
+   <ul class="menu"><li><h3><a href="#">Menu</a></h3></li>
   <li><h3><a href="#">Collecties</a></h3></li>
   <li><h3><a href="#">Objecten</a></h3></li>
   <li><h3><a href="#">Tekeningen</a></h3></li>
-  <li><h3><a href="#">Storingen</a></h3>
+  <li><h3><a href="#">Storingen</a></h3>  
   <ul class="dropdown">
   <li>Collecties</li>
   <li> Filter 1</li>

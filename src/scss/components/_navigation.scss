@@ -1,24 +1,48 @@
 nav {
-  padding: 0 20vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  @media screen and (min-width: $tablet-size) {
+    padding: 0 5vw;
+  }
+  @media screen and (min-width: $desktop-size) {
+    padding: 0 7vw;
+  }
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 95px;
+    padding-right: 20px;
+  }
   .menu {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin-bottom: 0;
-
+    display: flex;
+    margin: 0;
+    flex: 1 1 auto;
     li {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+
       h3 {
-        display: flex;
         a {
-          padding: 1vw 2vh;
+          padding: 2vh 2vw;
           display: block;
           text-decoration: none;
           color: rgb(44, 42, 59);
           border-bottom: 4px solid;
           border-color: transparent;
+          &:after {
+            margin-left: 12px;
+            content: "<";
+          }
           &:focus {
             border-bottom: 4px solid;
             border-color: #b20a2f;
+            &:after {
+              margin-left: 12px;
+              content: ">";
+            }
           }
           &:focus ~ .dropdown {
             display: block;
@@ -26,7 +50,11 @@ nav {
         }
       }
     }
+    @media screen and (max-width: $tablet-size) {
+      display: none;
+    }
   }
+
   .dropdown {
     visibility: hidden;
     padding: 0;
