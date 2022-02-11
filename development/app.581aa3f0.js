@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Header.js":[function(require,module,exports) {
+},{"./..\\fonts\\Frutiger.woff":[["Frutiger.d14186ae.woff","../src/fonts/Frutiger.woff"],"../src/fonts/Frutiger.woff"],"./..\\fonts\\Frutiger_bold.woff":[["Frutiger_bold.c04b9f95.woff","../src/fonts/Frutiger_bold.woff"],"../src/fonts/Frutiger_bold.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -198,7 +198,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var Header = function Header() {
-  var template = "\n    <header> \n   <nav>\n   <ul>\n   <li><a href=\"#\">  <img src=\"/src/static/3poppetjes.png\" alt=\"pijl\"/></a></li>\n   <li><a href=\"#\">Menu</a></li>\n  <li><a href=\"#\">Collecties</a></li>\n  <li><a href=\"#\">Objecten</a></li>\n  <li><a href=\"#\">Tekeningen</a></li>\n  <li><a href=\"#\">Storingen</a></li>\n  \n   </ul>\n   </nav>\n    </header>";
+  var template = "\n    <header> \n   <nav>\n   <ul>\n   <li><a href=\"#\">  <img src=\"keyboard_arrow_down.svg\" alt=\"pijl\"/></a></li>\n   <li><a href=\"#\">Menu</a></li>\n  <li><a href=\"#\">Collecties</a></li>\n  <li><a href=\"#\">Objecten</a></li>\n  <li><a href=\"#\">Tekeningen</a></li>\n  <li><a href=\"#\">Storingen</a></li>\n  \n   </ul>\n   </nav>\n    </header>";
   return template;
 };
 
@@ -283,7 +283,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52545" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57586" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
